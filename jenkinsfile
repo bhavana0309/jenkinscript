@@ -41,6 +41,7 @@ agent any
         stage('deploy'){
             steps{
             echo "Deploy into tomcat"
+            build 'Project deploy-war-from-jenkins-to-tomcat'
             }
         }
     }
